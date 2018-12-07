@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "686313b41692f0994cbf493d97578398",
+    "content-hash": "0de3d74b836d47735eac02bd33c67bd0",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -772,16 +772,16 @@
         },
         {
             "name": "laravel/scout",
-            "version": "v3.0.12",
+            "version": "v6.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/scout.git",
-                "reference": "0d97152e9006481e1608ad4286e53acf20a3c110"
+                "reference": "767de369a4702cdd4fdf29d1dcb4ba7dfafdbe95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/scout/zipball/0d97152e9006481e1608ad4286e53acf20a3c110",
-                "reference": "0d97152e9006481e1608ad4286e53acf20a3c110",
+                "url": "https://api.github.com/repos/laravel/scout/zipball/767de369a4702cdd4fdf29d1dcb4ba7dfafdbe95",
+                "reference": "767de369a4702cdd4fdf29d1dcb4ba7dfafdbe95",
                 "shasum": ""
             },
             "require": {
@@ -791,12 +791,12 @@
                 "illuminate/pagination": "~5.4",
                 "illuminate/queue": "~5.4",
                 "illuminate/support": "~5.4",
-                "php": ">=5.6.4"
+                "php": ">=7.0"
             },
             "require-dev": {
                 "algolia/algoliasearch-client-php": "^1.10",
-                "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "~5.0"
+                "mockery/mockery": "~1.0",
+                "phpunit/phpunit": "~6.0"
             },
             "suggest": {
                 "algolia/algoliasearch-client-php": "Required to use the Algolia engine (^1.10)."
@@ -804,7 +804,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "6.0-dev"
                 },
                 "laravel": {
                     "providers": [
@@ -833,7 +833,7 @@
                 "laravel",
                 "search"
             ],
-            "time": "2017-12-07T22:15:01+00:00"
+            "time": "2018-11-20T16:12:35+00:00"
         },
         {
             "name": "laravel/socialite",
