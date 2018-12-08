@@ -13,7 +13,14 @@ class PostController extends Controller
       $this->middleware('auth', ['except' => ['show', 'search', 'searchjs']]);
     }
 
-
+    public function search(Request $request)
+    {
+      if ($request->has('q')) {
+        
+      }else{
+        return view('posts.search');
+      }
+    }
 
     public function searchjs()
     {

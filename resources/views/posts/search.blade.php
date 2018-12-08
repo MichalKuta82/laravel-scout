@@ -3,16 +3,16 @@
 @section('content')
   <div class="container">
     <h1>Search for Posts</h1>
-    <form action="{{ route('posts.search') }}" method="get">
-      {{ csrf_field() }}
+    {!! Form::open(['method' => 'GET', 'action' => 'PostController@search']) !!}
 
       <div class="input-group">
         <input type="text" name="q" class="form-control input-lg" placeholder="Search for a post..." value="{{ old('q') }}"/>
+        {!! Form::text('q', null, ['class' => 'form-control', 'placeholder' => 'Search for a post...', 'name' => 'q']) !!}
         <span class="input-group-btn">
-          <button class="btn btn-default btn-lg" type="submit">Search</button>
+          {!! Form::submit('Create Post', ['class' => 'btn btn-primary', 'name' => 'submit']) !!}
         </span>
       </div>
-    </form>
+    {!! Form::close() !!}
     <hr />
 
     @foreach ($results as $post)
