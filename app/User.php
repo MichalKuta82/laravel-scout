@@ -36,4 +36,18 @@ class User extends Authenticatable
     public function posts() {
       return $this->hasMany('App\Post');
     }
+    
+      //overwritting table name
+      // public function searchableAs()
+      // {
+      //    return 'user_index';
+      // }
+
+      //overwritting which elements are searchable
+      // public function toSearchableArray()
+      // {
+      //    return [
+      //        'name', 'email',
+      //    ];
+      // }
 }

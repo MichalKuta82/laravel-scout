@@ -17,4 +17,18 @@ class Post extends Model
   {
     return $this->belongsTo('App\User');
   }
+
+  //overwritting table name
+  // public function searchableAs()
+  // {
+  // 	return 'post_index';
+  // }
+
+  //overwritting which elements are searchable
+  // public function toSearchableArray()
+  // {
+  // 	return [
+  // 		'title', 'content',
+  // 	];
+  // }
 }
