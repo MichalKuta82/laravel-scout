@@ -13,16 +13,7 @@ class PostController extends Controller
       $this->middleware('auth', ['except' => ['show', 'search', 'searchjs']]);
     }
 
-    public function search(Request $request)
-    {
-      if ($request->has('q')) {
-        $request->flashOnly('q');
-        $results = Post::search($request->q)->paginate(5);
-      } else {
-        $results = [];
-      }
-      return view('posts.search')->with('results', $results);
-    }
+
 
     public function searchjs()
     {
