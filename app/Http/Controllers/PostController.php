@@ -16,10 +16,12 @@ class PostController extends Controller
     public function search(Request $request)
     {
       if ($request->has('q')) {
-        
+        $request->flashOnly('q');
+        $results = Post::search($request->q)->get();
       }else{
-        return view('posts.search');
+        $results = [];
       }
+      return view('posts.search')->with('results', $results);
     }
 
     public function searchjs()

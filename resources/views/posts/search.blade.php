@@ -6,10 +6,9 @@
     {!! Form::open(['method' => 'GET', 'action' => 'PostController@search']) !!}
 
       <div class="input-group">
-        <input type="text" name="q" class="form-control input-lg" placeholder="Search for a post..." value="{{ old('q') }}"/>
         {!! Form::text('q', null, ['class' => 'form-control', 'placeholder' => 'Search for a post...', 'name' => 'q']) !!}
         <span class="input-group-btn">
-          {!! Form::submit('Create Post', ['class' => 'btn btn-primary', 'name' => 'submit']) !!}
+          {!! Form::submit('Search Post', ['class' => 'btn btn-primary', 'name' => 'submit']) !!}
         </span>
       </div>
     {!! Form::close() !!}
