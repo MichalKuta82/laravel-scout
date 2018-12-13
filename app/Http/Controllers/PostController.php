@@ -17,7 +17,7 @@ class PostController extends Controller
     {
       if ($request->has('q')) {
         $request->flashOnly('q');
-        $results = Post::search($request->q)->get();
+        $results = Post::search($request->q)->paginate(10);
       }else{
         $results = [];
       }
